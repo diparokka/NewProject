@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Package Booking</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<style type="text/css">
+
+header{
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(img14.jpg);
+	height: 35vh;
+	background-size: cover;
+	background-position: center;
+}
+
+h1{
+	color: #111;
+	font-size: 40px;
+}
+/*.header{
+	width: 20%;
+	margin:50px auto 0px;
+	color: white;
+	background: #AEAEAE;
+	text-align: center;
+	border: 1px solid #B0C4DE;
+	border-bottom: none;
+	border-radius: 10px 10px 0px 0px;
+	padding: 15px;
+
+	}*/
+
+form{
+	width: 25%;
+	margin:10px auto;
+	background: white;
+	border: 1px solid #B0C4DE;
+	border-radius: 10px 10px 10px 10px;
+	padding: 15px;
+
+}	
+
+.input-group{
+	margin: 10px 0px 10px 0px;
+}
+
+.input-group label{
+	display: block;
+	text-align: left;
+	margin: 3px;
+
+}
+
+.input-group input{
+	height: 30px;
+	width: 93%;
+	padding: 5px 15px;
+	font-size: 16px;
+	border-radius: 5px;
+	border: 1px solid grey;
+}
+
+
+footer {
+    display: block;
+    padding: 0px 0 60px;
+    color: #a3afba;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 30px;
+}
+.socials {
+    padding-top: 33px;
+    float: right;
+}
+
+.socials a {
+    background: url(time_bg.png) 0 center repeat-x;
+    float: left;
+    display: block;
+    font-size: 20px;
+    width: 40px;
+    height: 37px;
+    color: #e5e5e5;
+    text-align: center;
+    line-height: 37px;
+    border-radius: 7px;
+}
+
+.socials a:hover {
+    background-position: 0 -100px;
+    background-color: #F0F3F5;
+    color: #d84a45;
+}
+
+.socials a +a {
+    margin-left: 10px;
+}
+
+
+.copy {
+    float: left;
+    padding-top: 44px;
+    font-size: 10px;
+    line-height: 18px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+    .container_12{ position: relative; width: 960px; margin: 0 auto; padding: 0; }
+.grid_12
+    { float: left; display: inline; margin-left: 10px; margin-right: 10px; }
+    .container_12 .alpha               { margin-left: 0; }
+     .container_12 .omega               { margin-right: 0; }
+     .container_12 .grid_12         { width: 940px; }
+     @media only screen and (min-width: 768px) and (max-width: 995px) {
+        .container_12                                  { width: 768px; }
+        .grid_12
+        { margin-left: 10px; margin-right: 10px;  }
+        .container_12 .alpha               { margin-left: 0;}
+         .container_12 .omega               { margin-right: 0;
+        .container_12 .grid_12          { width: 748px; }
+         @media only screen and (max-width: 767px) {
+        .container_12{width: 300px;}
+        .grid_12{margin: 0;}
+ .container_12 .grid_12{width: 300px;}
+}
+
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+        .container_12 { width: 420px; }
+        .grid_12{margin: 0;}
+        .container_12 .grid_12{width: 420px;}
+    }
+    .container_12:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+ .fa {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+    .fa-twitter:before {
+  content: "\f099";
+}
+.fa-facebook:before {
+  content: "\f09a";
+}
+
+
+</style>
+<body>
+	<header>
+		<div class="main">
+			<div class="logo">
+				<img src="logo.png">
+			</div>
+			<ul>
+				<li><a href="index1.html">Home</a></li>
+				<li><a href="packages1.html">Packages</a></li>
+				<li><a href="AboutUs1.html">About Us</a></li>
+				<li><a href="contact1.html">Contact Us</a></li>
+				<li><a href="feedback1.php">Feedback</a></li>
+				
+			</ul>		
+		</div>
+	</header>
+
+					<h1 align="center">Book Trip With Us!!!</h1>
+
+	<form method="POST" action="book.php">
+<!-- 		 <div class="input-group">
+ -->		<label>Package Id : </label>
+		<!-- <input name='pid' required> -->
+		<select name='pid'>
+			<option value="101">101</option>
+			<option value="102">102</option>
+			<option value="103">103</option>
+			<option value="104">104</option>
+			<option value="105">105</option>
+			<option value="106">106</option>
+		</select><br><br>
+	<!-- 	Package ID : <select name="pid">
+			<option value="101">101</option>
+			<option value="102">102</option>
+			<option value="103">103</option>
+			<option value="104">104</option>
+			<option value="105">105</option>
+			<option value="106">106</option>
+			
+		</select> -->
+
+		<div class="input-group">
+		<label>Number of Adults :</label> <input type='text' name='noa' required><br><br></div>
+
+		<div class="input-group">
+		<label>Number of Children :</label> <input type='text' name='noc' required><br><br>
+		</div>
+
+		<div class="input-group">
+		<label>Date :</label> <input type='Date' name='date' required><br><br>
+		</div>
+
+				<div class="input-group">
+					<input type="submit" value="Confirm Booking">
+					<input type="reset" value ="Reset">
+					<a href="index.html"><input type="submit" value="Cancel" ></a>
+				</div>		
+	</form>
+
+	 <footer>
+            <div class="container_12">
+                <div class="grid_12">
+                    <div class="socials">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-google-plus"></a>
+                    </div>
+                    <div class="copy">
+                        Eazy Booking (c) 1995 | <a href="#">Privacy Policy</a> | www.eazyBookingNepal.com. All rights reserved.
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+
+</body>
+</html>

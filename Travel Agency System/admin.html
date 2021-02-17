@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin Login</title>
+</head>
+<style type="text/css">
+	
+.header1{
+width: 20%;
+margin:150px auto 0px;
+color: white;
+background: #AEAEAE;
+text-align: center;
+border: 1px solid #B0C4DE;
+border-bottom: none;
+border-radius: 10px 10px 0px 0px;
+padding: 15px;
+	}
+
+.header{
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(./img11.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+}	
+
+form{
+	width: 20%;
+	margin:0px auto;
+	background: white;
+	border: 1px solid #B0C4DE;
+	border-radius: 0px 0px 10px 10px;
+	padding: 15px;
+
+}	
+
+.input-group{
+	margin: 10px 0px 10px 0px;
+}
+
+.input-group label{
+	display: block;
+	text-align: left;
+	margin: 3px;
+
+}
+
+.input-group input{
+	height: 30px;
+	width: 93%;
+	padding: 5px 10px;
+	font-size: 16px;
+	border-radius: 5px;
+	border: 1px solid grey;
+}
+
+</style>
+
+<body class="header">
+	<div class="header1">
+		<h1>Admin Login</h1></div>
+		<form method="POST" action="admin.php">
+			<div class="input-group"><label>Admin Id:</label> <input type="text" name="adminid"></br></br></div>
+			<div class="input-group"><label>Email: </label><input type="email" name="adminem"></br></br></div>
+			<div class="input-group"><label>Password:</label> <input type="password" name="pass"></br></br></div>
+			<div class="input-group"><input type="submit" name="Login">
+			</div>
+		</form>
+
+</body>
+</html>

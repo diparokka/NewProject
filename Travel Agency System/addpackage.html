@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Package Booking</title>
+</head>
+<body>
+
+	<form method="POST" action="book.php">
+		Package Id : <input type="text" name="pid"><br><br>
+		Add Place : <input type="text" name="place"><br><br>
+		Number of Adults : <input type="text" name="noa"><br><br>
+		Number of Children : <input type="text" name="noc"><br><br>
+		Description : <input type="text" name="des"><br><br>
+		Stay Amount : <input type="text" name="samt"><br><br>
+		Food Amount : <input type="text" name="famt"><br><br>
+		Bus Amount : <input type="text" name="bamt"><br><br>
+		Number of days : <select name="Days">
+					<option value="1">1</option>
+					<option value="2">2</option> <option value="3">3</option> <option value="4">4</option>
+					<option value="5">5</option> <option value="6">6</option> <option value="7">7</option>
+					<option value="8">8</option> <option value="9">9</option> <option value="10">10</option>		
+		</select><br><br>
+
+		Number of nights : <select name="Nights">
+					<option value="1">1</option>
+					<option value="2">2</option> <option value="3">3</option> <option value="4">4</option>
+					<option value="5">5</option> <option value="6">6</option> <option value="7">7</option>
+					<option value="8">8</option> <option value="9">9</option> <option value="10">10</option>		
+		</select><br><br>
+
+			<input type="submit" name="Booked">
+			<input type="reset" name="Reset">
+	</form>
+
+</body>
+</html>

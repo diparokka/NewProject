@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin Package Add</title>
+</head>
+
+<body>
+	<form method="POST" action="addpack.php">
+		
+		Package ID :<input type="text" name="pid"><br/><br/><br/>
+		Package Name :<input type="text" name="pname"><br/><br/><br/> 
+		Travel_Duration :<input type="text" name="td"><br/><br/><br/>
+		Destination :<input type="text" name="desti"><br/><br/><br/>
+		Description :<input type="text" name="descr"><br/><br/><br/>
+		Amount :<input type="text" name="amt"><br/><br/><br/>
+		Add Image :<input type="file" name="image" id="image"><br/><br/>
+				<!--input type="submit" value="Upload" name="Insert" id="insert"><br/><br/><br/-->
+				<input type="submit" name="submit" value="Submit">
+				<input type="reset" name="Reset">
+		
+	</form>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$('#insert').click(function()
+		{
+			var image_name = $('#image').val();
+			if(image_name== '')
+			{
+				alert("Please select image");
+				return false;
+			}
+			else{
+				var extension = $('#image').val().split('.').pop().toLowerCase();
+				if(jQuery.inArray(extension, ['gif','png','jpg','jpeg']) == -1)
+				{
+					alert('Invalid Image File');
+					$('#image').val('');
+					return false;
+				}
+			}
+		})
+	})
+</script>
+
+</body>
+</html>

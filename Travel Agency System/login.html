@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style type="text/css">
+
+header{
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(./img11.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
+.input-group{
+	margin: 10px 0px 10px 0px;
+}
+
+.input-group label{
+	text-align: left;
+
+}
+
+.input-group input{
+	height: 25px;
+	width: 93%;
+	padding: 5px 5px;
+	font-size: 14px;
+	border-radius: 5px;
+	border: 1px solid grey;
+}
+.btn {
+
+	margin-right: 20px;
+    background-color: #555;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid #fff;
+	padding: 10px 30px;
+	color: #fff;
+	text-decoration: none;
+	transition: 0.6s ease;
+}
+
+.button {
+  display: block;
+  max-width: 300px;
+  margin: auto;
+  margin-left: 100px;
+}
+
+.button:hover {
+	position: absolute;
+	top: 65%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+    background-color: green;
+}
+
+.btn:hover{
+	background-color: #fff;
+	color: #000;
+
+}
+.container{
+	background: rgba(255,255,255,0.3);
+	height: 450px;
+	width: 25%;
+	border-radius: 50px;
+} 
+
+form{
+	padding-top: -100%;
+}
+
+.title{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	color: #fff;
+	transform: translate(-50%,-50%);
+}
+#center{
+	width: 100%;
+	height: 50%;
+}
+
+
+footer {
+    display: block;
+    padding: 0px 0 60px;
+    color: #a3afba;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: -15px;
+}
+.socials {
+    padding-top: 33px;
+    float: right;
+}
+
+.socials a {
+    background: url(time_bg.png) 0 center repeat-x;
+    float: left;
+    display: block;
+    font-size: 20px;
+    width: 40px;
+    height: 37px;
+    color: #e5e5e5;
+    text-align: center;
+    line-height: 37px;
+    border-radius: 7px;
+}
+
+.socials a:hover {
+    background-position: 0 -100px;
+    background-color: #F0F3F5;
+    color: #d84a45;
+}
+
+.socials a +a {
+    margin-left: 10px;
+}
+
+
+.copy {
+    float: left;
+    padding-top: 44px;
+    font-size: 10px;
+    line-height: 18px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+    .container_12{ position: relative; width: 960px; margin: 0 auto; padding: 0; }
+.grid_12
+    { float: left; display: inline; margin-left: 10px; margin-right: 10px; }
+    .container_12 .alpha               { margin-left: 0; }
+     .container_12 .omega               { margin-right: 0; }
+     .container_12 .grid_12         { width: 940px; }
+     @media only screen and (min-width: 768px) and (max-width: 995px) {
+        .container_12                                  { width: 768px; }
+        .grid_12
+        { margin-left: 10px; margin-right: 10px;  }
+        .container_12 .alpha               { margin-left: 0;}
+         .container_12 .omega               { margin-right: 0;
+        .container_12 .grid_12          { width: 748px; }
+         @media only screen and (max-width: 767px) {
+        .container_12{width: 300px;}
+        .grid_12{margin: 0;}
+ .container_12 .grid_12{width: 300px;}
+}
+
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+        .container_12 { width: 420px; }
+        .grid_12{margin: 0;}
+        .container_12 .grid_12{width: 420px;}
+    }
+    .container_12:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+ .fa {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+    .fa-twitter:before {
+  content: "\f099";
+}
+.fa-facebook:before {
+  content: "\f09a";
+}
+
+
+</style>
+<body>
+	<header>
+		<div class="main">
+			<div class="logo">
+				<img src="logo.png">
+			</div>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="packages.html">Packages</a></li>
+				<li><a href="AboutUs.html">About Us</a></li>
+				<li><a href="Contact.html">Contact Us</a></li>
+				<li><a href="feedback.php">Feedback</a></li>
+				<li class="active"><a href="login.html">Login</a></li>
+			</ul>		
+		</div>
+	<div id="center" style="margin-bottom: -200px;"></div>
+<center>
+	<div class="container">
+		<div class="title">
+	<h1 style="margin-top:-20%;">Login Form</h1>
+	<form method='POST' action='user.php'><p>
+			<div class="input-group"><label>Email : </label><input type='email' name='email' required></br></br></div>
+			<div class="input-group"><label>Password : </label> <input type='Password' name='pass' required></br></br></div>
+			<div class="input-group"><input type='submit' name='Login' class='btn'></div>
+			<div class="input-group"><input type='reset' value='Reset' class='btn'></br></br><br/></p></div>
+		</form>	
+		<form method='post' action='signin.php'>
+		<div class="input-group">
+			<label><h1>Not a Member?</h1></label>
+			<a href='signin.html'> <label>SIGN UP HERE!</h1></label></a>
+		</div>		
+	<!-- <form method="POST" action="login.php" style="margin-bottom:-50%;">
+		<a href="admin.html"><button type="button" name="admin" class="btn">Admin</button></a>
+		<a href="user1.html"><button type="button" name="user" class="btn">User</button></a>
+	</form> -->
+	</div>
+</center>
+
+	</header>
+	<footer>
+            <div class="container_12">
+                <div class="grid_12">
+                    <div class="socials">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-google-plus"></a>
+                    </div>
+                    <div class="copy">
+                        Eazy Booking (c) 1995 | <a href="#">Privacy Policy</a> | www.eazyBookingNepal.com. All rights reserved.
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+</body>
+</html>

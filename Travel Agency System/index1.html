@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> AshuTosh Travel and Tours Pvt. Ltd </title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style type="text/css">
+	header{
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(img14.jpg);
+	height: 35vh;
+	background-size: cover;
+	background-position: center;
+}
+
+
+.title h1{
+	color: #fff;
+	font-size: 40px;
+	margin-bottom: 450px;
+}
+
+.container{ position: relative; width: 960px; margin: 0 auto; padding: 0; }
+
+.pack{
+    margin-top: 20px;
+    height: 60vh;
+}
+
+.container{
+    border-style: solid;
+    border-radius: 1px;
+    border-color: #f2f2f2;
+    height: 60vh;
+
+}
+
+.slider-frame{
+	overflow: hidden;
+	height: 800px;
+	width: 1200px;
+	margin-left: 50px;
+	margin-top: 20px;
+	
+}
+
+@keyframes slide_animation{
+	0%{left:0px;}
+	10%{left:0px;}
+	20%{left:1200px;}
+	30%{left:1200px;}
+	40%{left:2400px;}
+	50%{left:2400px;}
+	60%{left:1200px;}
+	70%{left:1200px;}
+	80%{left:0px;}
+	90%{left:0px;}
+	100%{left:0px;}
+}	
+
+.slide-images{
+	width: 3600px;
+	height: 800px;
+	margin: 0 0 0 -2400px;
+	position: relative;
+	animation-name: slide_animation;
+	animation-duration: 33s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-play-state: running;
+}
+
+.img-container{
+	height: 800px;
+	width: 1200px;
+	position: relative;
+	float: left;
+}
+
+.container .content {
+  position: absolute; /* Position the background text */
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.3); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 35%;
+  height: 20%; /* Full width */
+  margin: 500px;
+  padding: 40px; 
+  padding-left: 40px; 
+}
+
+
+footer {
+	display: block;
+    padding: 0px 0 60px;
+    color: #a3afba;
+    font-family: 'Open Sans', sans-serif;
+}
+.socials {
+    padding-top: 33px;
+    float: right;
+}
+
+.socials a {
+    background: url(time_bg.png) 0 center repeat-x;
+    float: left;
+    display: block;
+    font-size: 20px;
+    width: 40px;
+    height: 37px;
+    color: #e5e5e5;
+    text-align: center;
+    line-height: 37px;
+    border-radius: 7px;
+}
+
+.socials a:hover {
+    background-position: 0 -100px;
+    background-color: #F0F3F5;
+    color: #d84a45;
+}
+
+.socials a +a {
+    margin-left: 10px;
+}
+
+
+.copy {
+    float: left;
+    padding-top: 44px;
+    font-size: 10px;
+    line-height: 18px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+    .container_12{ position: relative; width: 960px; margin: 0 auto; padding: 0; }
+.grid_12
+	{ float: left; display: inline; margin-left: 10px; margin-right: 10px; }
+	.container_12 .alpha               { margin-left: 0; }
+     .container_12 .omega               { margin-right: 0; }
+     .container_12 .grid_12			{ width: 940px; }
+     @media only screen and (min-width: 768px) and (max-width: 995px) {
+        .container_12                                  { width: 768px; }
+        .grid_12
+		{ margin-left: 10px; margin-right: 10px;  }
+		.container_12 .alpha               { margin-left: 0;}
+         .container_12 .omega               { margin-right: 0;
+		.container_12 .grid_12			{ width: 748px; }
+		 @media only screen and (max-width: 767px) {
+        .container_12{width: 300px;}
+        .grid_12{margin: 0;}
+ .container_12 .grid_12{width: 300px;}
+}
+
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+        .container_12 { width: 420px; }
+        .grid_12{margin: 0;}
+        .container_12 .grid_12{width: 420px;}
+    }
+    .container_12:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+ .fa {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+    .fa-twitter:before {
+  content: "\f099";
+}
+.fa-facebook:before {
+  content: "\f09a";
+}
+
+</style>
+<body>
+	<header>
+		<div class="main">
+			<div class="logo">
+				<img src="logo.png">
+			</div>
+			<ul>
+				<li class="active"><a href="index.html">Home</a></li>
+				<li><a href="packages1.html">Packages</a></li>
+				<li><a href="AboutUs1.html">About Us</a></li>
+				<li><a href="contact1.html">Contact Us</a></li>
+				<li><a href="feedback1.php">Feedback</a></li>
+				
+			</ul>		
+		</div>
+		<div class="title">
+			<h1>Welcome to Ashutosh Travels & Tours</h1>
+     </div>       		
+	</header>
+
+
+	<div class="pack">
+		<div class="container">
+	<div class="slider-frame">
+	<div class="slide-images">
+		<div class="img-container">
+			<img src="img32.jpg" style="height: 400px; width: 900px; padding-right: -120px; margin-left: -30px;">
+			<div class="content" style="margin-left: 50px;">
+				<h1>Namaste and Welcome to Nepal</h1>
+    			<p>Nepal is Known for the highest Himalayas,artistic monuments, exotic wildlife and diverse culture. 
+    			It is situated between india and china. It is primarily an agricultural country with ethnic groups varied as its land with their own language and culture. People here hold the strong belief in saying 
+    			"Unity is Diversity."</p>
+  			</div>
+		</div>
+
+		<div class="img-container">
+			<img src="img33.jpg" style="height: 400px; width: 900px; padding-right: -120px; margin-left: -30px;">
+			<div class="content" style="margin-left: 50px;">
+				<h1>Trekking in Nepal</h1>
+    			<p>The best way to explore Nepal's unbeatable combination of authentic natural beauty and traditional cultural riches in walking one's organic rhythyms of feet. Presently, it is known as trkking. The dramatic contrasts is elevations and climatic condition found here will support to the equally spectacular mix of lifestyles, wide range of vegetation and wildlife</p>
+  			</div>
+		</div>
+
+		<div class="img-container">
+			<img src="img30.jpg" style="height: 400px; width: 900px; padding-right: -120px; margin-left: -30px;">
+			<div class="content" style="margin-left: 50px;">
+				<h1>Kathmandu Valley</h1>
+    			<p>Kathmandu is the capital and largest metropolitan city of Nepal. The city is situated in Kathmandu Valley, which also contains two other cities - Lalitpur and Bhaktapur. Nepali is the lingua franca of the city, through many speak Newari as it is the center of Newar people and culture. English is understood by all of the educated poplulation of the city. </p>
+  			</div>
+		</div>
+
+		
+	</div>
+	
+</div>
+</div></div>
+
+	<div class="pack">
+
+	<div class="container">
+				<div><h2 style="font-size: 30px; margin-top: 10px; padding-left: 10px; font-family: WildWest;">
+						Nepal Vacation and Tours
+				</h2></div> <br><br> 
+				<div> <h2 style="font-size: 20px; padding-left: 10px; font-family: WildWest;"> Famous for its scenic beauty and cultural diversity, Nepal has everything to offer to travelers. We arrange Nepal Tour packages including custom holiday packages for our esteemed clients along with tour packages for Tibet and Bhutan. Also we are dealing with Nepal - India Tours where we have our services given in both India and Nepal.</h2></div> <br><br>
+
+				<div><h2 style="font-size: 20px; padding-left: 10px; font-family: WildWest;">Nepal trip is legendary for its common hiking, trekking, climbing, mountaineering, mountain biking, wild life campaign, paragliding, rafting, sightseeing, with plenty of additional. The scenic view of Nepal makes you fall in love with nature. One can travel to Nepal throughout the year as the weather is always so refreshing.</h2></div>	<br><br>  
+			
+	</div>
+</div>
+
+<div class="pack">
+
+	<div class="container">
+				<div><h2 style="font-size: 30px; margin-top: 10px; padding-left: 10px; font-family: sans-serif;">
+						About Nepal
+				</h2></div> <br><br> 
+				<div> <h2 style="font-size: 20px; padding-left: 10px; font-family: WildWest;"> Nepal is the tourists heaven with its rich culture and a vast heritage, the small kingdom of Nepal is blessed with such astonishing and unique sites that it holds its significant position in naming itself as a best destination for a Unique World heritage tour. The culture of Nepal is a combination of tradition and novelty. A Tour to Nepal will enable you to get the glimpse of its beauty and lifestyle.</h2></div> <br><br>
+
+				<div><h2 style="font-size: 20px; padding-left: 10px; font-family: WildWest;">Nepal is a country with diverse topography, culture & ethnicity. Out of 14 world highest 8000m peaks in the world, Nepal has 8 peaks located inside its boundary which includes Mt. Everest, Mt. Kanchangunja, Mt. Lhotse, Mt. Makalu, Mt. Cho-Oye, Mt. Dhulagairi, Mt. Mansalu & Mt. Annapurna. Ranging Topography from flat Terai region to the snow capped Himalayas the climate also varies with its altitude from Tropical to Alpine climate. With population of more than 25.8 million Nepal is a multi cultural, linguistic and ethnic country.</h2></div>	<br><br>  
+			
+	</div>
+</div>
+<footer>
+			<div class="container_12">
+				<div class="grid_12">
+					<div class="socials">
+						<a href="#" class="fa fa-facebook"></a>
+						<a href="#" class="fa fa-twitter"></a>
+						<a href="#" class="fa fa-google-plus"></a>
+					</div>
+					<div class="copy">
+						Eazy Booking (c) 1995 | <a href="#">Privacy Policy</a> | www.eazyBookingNepal.com. All rights reserved.
+					</div>
+				</div>
+			</div>
+		</footer>
+
+
+
+	
+		
+</body>
+</html>
